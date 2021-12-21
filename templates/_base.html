@@ -1,5 +1,6 @@
 <!--
 templates/_base.html
+ok: 12/20/21 06:50
 -->
 {% load static %}
 <!DOCTYPE html>
@@ -25,10 +26,9 @@ templates/_base.html
           <a class="p-2 text-dark" href="{% url 'account_logout' %}">Log Out</a>
         {% else %}
           <a class="p-2 text-dark" href="{% url 'account_login' %}">Log In</a>
-          <a class="btn btn-outline-primary"
-            href="{% url 'account_signup' %}">Sign Up</a>
-        {% endif %}
-      </nav>
+          <a class="btn btn-outline-primary" href="{% url 'account_signup' %}">Sign Up</a>
+  {% endif %}
+</nav>
     </div>
   </header>
   <div class="container">
