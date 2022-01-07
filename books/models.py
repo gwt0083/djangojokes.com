@@ -44,3 +44,10 @@ class Review(models.Model): # new
 
     def __str__(self):
         return self.review
+
+
+"""
+        indexes = [
+            models.Index(fields=['id'], name='id_index'),
+        ]
+"""
